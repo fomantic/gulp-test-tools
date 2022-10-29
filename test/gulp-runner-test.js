@@ -77,7 +77,7 @@ describe('run gulp', function() {
     r.chdir('foo/bar').gulp('--tasks-simple').run(function(err, stdout) {
       expect(stdout).to.equal('a\nb\ndefault\n');
     });
-    r.gulp().run(function(err, stdout) {
+    r.gulp('--tasks-simple').run(function(err, stdout) {
       expect(stdout).to.equal('task1\ntask2\ndefault\n');
     });
     done();

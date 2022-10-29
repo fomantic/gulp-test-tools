@@ -1,16 +1,16 @@
 {
-  "name": "gulp-test-tools",
+  "name": "@fomantic/gulp-test-tools",
   "version": "0.6.2",
   "description": "Test tools for gulp",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha --timeout 5000",
+    "test": "mocha --timeout 7000",
     "coverage": "nyc --reporter=lcov --reporter=text-summary npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sttk/gulp-test-tools.git"
+    "url": "git+https://github.com/fomantic/gulp-test-tools.git"
   },
   "keywords": [
     "gulp",
@@ -23,16 +23,16 @@
   },
   "homepage": "https://github.com/sttk/gulp-test-tools#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "eslint": "^5.10.0",
-    "gulp": "^4.0.0",
-    "gulp-cli": "^2.0.1",
-    "mocha": "^3.2.0"
+    "chai": "^4.3.6",
+    "eslint": "^8.26.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "mocha": "^9.2.2"
   },
   "dependencies": {
-    "fined": "^1.0.2",
-    "fs-extra": "^1.0.0",
-    "nyc": "^13.1.0",
-    "semver": "^5.3.0"
+    "fined": "^2.0.0",
+    "fs-extra": "^10.1.0",
+    "nyc": "^15.1.0",
+    "semver": "^7.3.8"
   }
 }

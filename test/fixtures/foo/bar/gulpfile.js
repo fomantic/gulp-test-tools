@@ -9,5 +9,6 @@ function a(cb) {
 function b(cb) {
   return cb();
 }
-
-gulp.task('default', gulp.series(a, b));
+gulp.task('a', a);
+gulp.task('b', b);
+gulp.task('default', gulp.series('a', 'b'));
